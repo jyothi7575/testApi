@@ -142,32 +142,32 @@ namespace NISMAPI.Business.Managers
             }
         }
 
-    public Int64 InsertSignUpDetails(MasterEntity MasterEntity)
-    {
-      try
-      {
-        var filter = new
-        {
-          FirstName = MasterEntity.FirstName,
-          MiddleName= MasterEntity.MiddleName,
-          LastName = MasterEntity.LastName,
-          MobileNumber = MasterEntity.MobileNumber,
-          CountryCode = MasterEntity.CountryCode,
-          EmailID = MasterEntity.EmailID,
-          Username = MasterEntity.Username,
-          MobileOTP = MasterEntity.MobileOTP,
-          EmailOTP = MasterEntity.EmailOTP,
-          Password = MasterEntity.Password,
-          StatusID = MasterEntity.StatusID,
-          Remarks = MasterEntity.Remarks
-        };
-        return IMasterRrepository.InsertSignUpDetails(filter);
-      }
-      catch (Exception ex)
-      {
-        throw ex;
-      }
-    }
+    //public Int64 InsertSignUpDetails(MasterEntity MasterEntity)
+    //{
+    //  try
+    //  {
+    //    var filter = new
+    //    {
+    //      FirstName = MasterEntity.FirstName,
+    //      MiddleName= MasterEntity.MiddleName,
+    //      LastName = MasterEntity.LastName,
+    //      MobileNumber = MasterEntity.MobileNumber,
+    //      CountryCode = MasterEntity.CountryCode,
+    //      EmailID = MasterEntity.EmailID,
+    //      Username = MasterEntity.Username,
+    //      MobileOTP = MasterEntity.MobileOTP,
+    //      EmailOTP = MasterEntity.EmailOTP,
+    //      Password = MasterEntity.Password,
+    //      StatusID = MasterEntity.StatusID,
+    //      Remarks = MasterEntity.Remarks
+    //    };
+    //    return IMasterRrepository.InsertSignUpDetails(filter);
+    //  }
+    //  catch (Exception ex)
+    //  {
+    //    throw ex;
+    //  }
+    //}
 
 
     public dynamic GetRegistrationLogin(object filter)

@@ -21,7 +21,7 @@ namespace NISMAPI.Business.Interface
 
         Int64 DeleteStatusMaster(object filter);
 
-        Int64 InsertSignUpDetails(MasterEntity MasterEntity);
+        //Int64 InsertSignUpDetails(MasterEntity MasterEntity);
         dynamic GetRegistrationLogin(object filter);
         IEnumerable<dynamic> GetSignUpDetailsByEmailMobileOtpID(object filter);
         IEnumerable<dynamic> GetSignUpDetailsByID(object filter);

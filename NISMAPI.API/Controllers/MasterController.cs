@@ -290,30 +290,30 @@ namespace NISMAPI.API.Controllers
         }
 
 
-    [HttpPost]
-    [Route("Master/InsertSignUpDetails")]
-    public HttpResponseMessage InsertSignUpDetails(MasterEntity MasterEntity)
-    {
-      HttpResponseMessage response;
-      try
-      {
+    //[HttpPost]
+    //[Route("Master/InsertSignUpDetails")]
+    //public HttpResponseMessage InsertSignUpDetails(MasterEntity MasterEntity)
+    //{
+    //  HttpResponseMessage response;
+    //  try
+    //  {
 
 
-        Int64 result = IMasterManager.InsertSignUpDetails(MasterEntity);
-        response = Request.CreateResponse(HttpStatusCode.OK, result);
+    //    Int64 result = IMasterManager.InsertSignUpDetails(MasterEntity);
+    //    response = Request.CreateResponse(HttpStatusCode.OK, result);
 
 
-      }
-      catch (Exception ex)
-      {
-        if (log.IsErrorEnabled)
-        {
-          log.Error("Error in InsertSignUpDetails", ex);
-        }
-        response = Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message + "Error:InsertStatusMaster");
-      }
-      return response;
-    }
+    //  }
+    //  catch (Exception ex)
+    //  {
+    //    if (log.IsErrorEnabled)
+    //    {
+    //      log.Error("Error in InsertSignUpDetails", ex);
+    //    }
+    //    response = Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message + "Error:InsertStatusMaster");
+    //  }
+    //  return response;
+    //}
 
     [HttpGet]
     [Route("Master/GetSignUpDetailsByEmailMobileOtpID")]

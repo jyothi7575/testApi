@@ -101,17 +101,17 @@ namespace NISMAPI.Data.Repositories
             }
         }
 
-    public Int64 InsertSignUpDetails(object filter)
-    {
-      try
-      {
-        return db.Query<Int64>("[dbo].[SProc_InsertSignUpDetails]", filter, commandType: CommandType.StoredProcedure).SingleOrDefault();
-      }
-      catch (Exception ex)
-      {
-        throw ex;
-      }
-    }
+    //public Int64 InsertSignUpDetails(object filter)
+    //{
+    //  try
+    //  {
+    //    return db.Query<Int64>("[dbo].[SProc_InsertSignUpDetails]", filter, commandType: CommandType.StoredProcedure).SingleOrDefault();
+    //  }
+    //  catch (Exception ex)
+    //  {
+    //    throw ex;
+    //  }
+    //}
 
     public T GetRegistrationLogin<T>(object filter)
     {

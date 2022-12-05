@@ -25,7 +25,7 @@ namespace NISMAPI.Data.Interface
 
 
          Int64 InsertStatusMaster(object filter);
-         Int64 InsertSignUpDetails(object filter);
+         //Int64 InsertSignUpDetails(object filter);
 
 
 
